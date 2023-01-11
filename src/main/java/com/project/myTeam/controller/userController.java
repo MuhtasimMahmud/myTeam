@@ -9,12 +9,12 @@ public class userController {
 
     @GetMapping("/user")
     public String normalUser(){
-        return "User/user";
+        return "player/playerDashboard";
     }
 
     @GetMapping("/admin")
     public String adminUser(){
-        return "Admin/admin";
+        return "teamOwner/ownerDashboard";
     }
 
 }
