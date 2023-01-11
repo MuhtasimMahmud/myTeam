@@ -1,6 +1,6 @@
 package com.project.myTeam.repositories;
 
-import com.template.user_registraion_and_role_baseed_login_template.models.User;
+import com.project.myTeam.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

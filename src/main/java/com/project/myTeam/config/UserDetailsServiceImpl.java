@@ -1,7 +1,7 @@
 package com.project.myTeam.config;
 
-import com.template.user_registraion_and_role_baseed_login_template.models.User;
-import com.template.user_registraion_and_role_baseed_login_template.repositories.UserRepository;
+import com.project.myTeam.models.User;
+import com.project.myTeam.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
