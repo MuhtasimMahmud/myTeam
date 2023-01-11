@@ -56,8 +56,10 @@
         <meta charset="UTF-8">
         <title> Team Management base </title>
 
+        <!-- side navbar er template er css -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
+
 
         <!-- Custom CSS -->
         <link rel="stylesheet" th:href="@{/css/managerBase.css}">
@@ -75,43 +77,21 @@
             <header>
                 <a href="#">My App</a>
             </header>
-            <ul class="nav">
-                <li>
-                    <a href="#">
-                        <i class="zmdi zmdi-view-dashboard"></i> Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="zmdi zmdi-link"></i> Shortcuts
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="zmdi zmdi-widgets"></i> Overview
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="zmdi zmdi-calendar"></i> Events
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="zmdi zmdi-info-outline"></i> About
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="zmdi zmdi-settings"></i> Services
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="zmdi zmdi-comment-more"></i> Contact
-                    </a>
-                </li>
+
+            <ul class="nav" style="margin-top: 35%;">
+                <li> <a href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
+                <li> <a href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
+                <li> <a href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
+                <li> <a href="#"> <i class="zmdi zmdi-calendar"></i> Injured players </a> </li>
+                <li> <a href="#"> <i class="zmdi zmdi-info-outline"></i> Star players </a> </li>
+                <li> <a href="#"> <i class="zmdi zmdi-settings"></i> Applications </a> </li>
+                <li> <a href="#"> <i class="zmdi zmdi-comment-more"></i> Team Code </a> </li>
             </ul>
+
+            <ul class="nav">
+                <li> <a th:href="@{/logout}" id="logout"> <button class="btn btn-success"> Logout </button> </a> </li>
+            </ul>
+
         </div>
 
 
@@ -145,6 +125,8 @@
 
     </div>
     <!-- partial -->
+
+
 
     </body>
 </html>
