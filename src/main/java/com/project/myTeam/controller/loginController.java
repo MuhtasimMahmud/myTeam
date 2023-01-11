@@ -1,6 +1,6 @@
 package com.project.myTeam.controller;
 
-import com.template.user_registraion_and_role_baseed_login_template.repositories.UserRepository;
+import com.project.myTeam.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

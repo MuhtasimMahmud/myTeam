@@ -1,9 +1,9 @@
 package com.project.myTeam.controller;
 
 
-import com.template.user_registraion_and_role_baseed_login_template.helper.Message;
-import com.template.user_registraion_and_role_baseed_login_template.models.User;
-import com.template.user_registraion_and_role_baseed_login_template.repositories.UserRepository;
+import com.project.myTeam.helper.Message;
+import com.project.myTeam.models.User;
+import com.project.myTeam.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
