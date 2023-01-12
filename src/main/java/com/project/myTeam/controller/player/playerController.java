@@ -1,6 +1,5 @@
 package com.project.myTeam.controller.player;
 
-
 import com.project.myTeam.models.User;
 import com.project.myTeam.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,6 @@ public class playerController {
 
     @Autowired
     UserRepository userRepository;
-
 
     @GetMapping("/playerDashboard")
     public String normalUser(Model model, Principal principal){
