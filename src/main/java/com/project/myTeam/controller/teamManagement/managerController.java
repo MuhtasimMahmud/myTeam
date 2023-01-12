@@ -17,17 +17,12 @@ public class managerController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("/managerDashboard")
+    @GetMapping("/managerHome")
     public String adminUser(Model model, Principal principal){
 
         User teamManagement = userRepository.findByEmail(principal.getName());
 
         model.addAttribute("loggedInUserName", teamManagement.getName());
-        return "teamManagement/managerDashboard";
-    }
-
-    @GetMapping("/managerHome")
-    public String managerHome(){
         return "teamManagement/managerHome";
     }
 

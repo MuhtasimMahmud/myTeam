@@ -55,59 +55,56 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
 
-<head>
-    <meta charset="UTF-8">
-    <title> Player base </title>
+    <head>
+        <meta charset="UTF-8">
+        <title> Player base </title>
 
-    <!-- side navbar er template er css -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
-
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" th:href="@{/css/managerBase.css}">
-
-    <!-- javaScript -->
-    <link rel="script" src="js/find_LoggedInName.js">
-
-</head>
-
-<body>
-<!-- partial:index.partial.html -->
-<div id="viewport">
-    <!-- Sidebar -->
-    <div id="sidebar">
-        <header>
-            <a href="#">My App</a>
-        </header>
-
-        <ul class="nav" style="margin-top: 85%;">
-            <li> <a href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
-            <li> <a href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
-            <li> <a href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
-            <li> <a href="#"> <i class="zmdi zmdi-settings"></i> Availability </a> </li>
-        </ul>
-
-        <ul class="nav">
-            <li> <a th:href="@{/logout}" id="logout"> <button class="btn btn-success"> Logout </button> </a> </li>
-        </ul>
-
-    </div>
+        <!-- side navbar er template er css -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
 
 
-    <!-- Content -->
-    <div id="content">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" th:href="@{/css/managerBase.css}">
 
-        <div th:replace="${content}"> </div>
+        <!-- javaScript -->
+        <link rel="script" src="js/find_LoggedInName.js">
 
-    </div>
+    </head>
 
-</div>
-<!-- partial -->
+    <body>
+
+        <div id="viewport">
+
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <header>
+                    <a href="#">My Team</a>
+                </header>
+
+                <ul class="nav" style="margin-top: 85%;">
+                    <li> <a href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
+                    <li> <a href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
+                    <li> <a href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
+                    <li> <a href="#"> <i class="zmdi zmdi-settings"></i> Availability </a> </li>
+                </ul>
+
+                <ul class="nav">
+                    <li> <a th:href="@{/logout}" id="logout"> <button class="btn btn-success"> Logout </button> </a> </li>
+                </ul>
+
+            </div>
 
 
+            <!-- Content -->
+            <div id="content">
+                <div th:replace="${content}"> </div>
+            </div>
 
-</body>
+        </div>
+
+    </body>
+
 </html>
 
 

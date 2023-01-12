@@ -17,13 +17,13 @@ public class playerController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("/playerDashboard")
+    @GetMapping("/playerHome")
     public String normalUser(Model model, Principal principal){
 
         User player = userRepository.findByEmail(principal.getName());
 
         model.addAttribute("loggedInUserName", player.getName());
-        return "player/playerDashboard";
+        return "player/playerHome";
     }
 
 }

@@ -42,9 +42,9 @@ public class CustomLoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
         }
 
         if(roles.contains("ROLE_PLAYER")){
-            url = "/player/playerDashboard";
+            url = "/player/playerHome";
         }else if(roles.contains("ROLE_MANAGER")){
-            url = "/teamManagement/managerDashboard";
+            url = "/teamManagement/managerHome";
         }
         return url;
     }
