@@ -26,4 +26,9 @@ public class managerController {
         return "teamManagement/managerDashboard";
     }
 
+    @GetMapping("/managerHome")
+    public String managerHome(){
+        return "teamManagement/managerHome";
+    }
+
 }
