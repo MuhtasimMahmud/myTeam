@@ -27,9 +27,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 
+        <!-- javaScript for loggedIn user name (eta head e bcz shob kichu load houar age eita load hoite hobe)-->
+        <script type="text/javascript" src="/js/find_LoggedInName.js"> </script>
+
+
     </head>
 
-    <body>
+    <body th:onload="'currentUserName()'">
 
         <div id="viewport">
             <!-- Sidebar -->
@@ -58,11 +62,22 @@
 
             <!-- Content -->
             <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li> <a href="#"> <i class="zmdi zmdi-notifications text-success"> </i> <span id="currentLoggedInUserName"> </span> </a> </li>
+                        </ul>
+                    </div>
+                </nav>
+
+
                  <div th:replace="${content}"> </div>
             </div>
 
 
         </div>
+
 
         <!-- javaScript for pieChart at managerHome -->
         <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="/js/managerHome.js"></script>
