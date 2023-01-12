@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="User/Userbase::layout(~{::section})">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="player/playerBase::layout(~{::section})">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -11,11 +11,6 @@
     <body>
 
         <section>
-            <h1 class="text-center mb-5 mt-5"> This is user page. </h1>
-
-            <div class="text-center">
-                <a th:href="@{/logout}" id="logout"> <button class="btn btn-success"> Logout </button> </a>
-            </div>
 
         </section>
 
