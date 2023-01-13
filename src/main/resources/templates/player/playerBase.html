@@ -35,10 +35,10 @@
                 </header>
 
                 <ul class="nav" style="margin-top: 85%;">
-                    <li id="home"> <a th:onclick="'highlight()'"  href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
-                    <li> <a th:onclick="'highlight()'" id="best11" href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
-                    <li> <a th:onclick="'highlight()'" id="allPlayers" href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
-                    <li> <a th:onclick="'highlight()'" id="availability" href="#"> <i class="zmdi zmdi-settings"></i> Availability </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +home+ '\');'" id="home" href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +best11+ '\');'" id="best11" href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +allPlayers+ '\');'" id="allPlayers" href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +availability+ '\');'" id="availability" href="#"> <i class="zmdi zmdi-settings"></i> Availability </a> </li>
                 </ul>
 
                 <ul class="nav">

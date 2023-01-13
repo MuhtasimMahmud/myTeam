@@ -1,3 +1,5 @@
+
+
 // ei js file ta hocche manager home er je pie chart ase oitar jonno
 
 function sliceSize(dataNum, dataTotal) {
