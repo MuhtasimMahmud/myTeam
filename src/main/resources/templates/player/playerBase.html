@@ -11,12 +11,16 @@
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
 
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" th:href="@{/css/managerBase.css}">
+        <!-- sideNav CSS -->
+        <link rel="stylesheet" th:href="@{/css/sideNav.css}">
 
 
         <!-- javaScript for loggedIn user name (ei file er moddhe je function ta ase eta ei base file er body te call korsi onload e)-->
         <script type="text/javascript" src="/js/find_LoggedInName.js"> </script>
+
+
+        <!-- Custom js -->
+        <script type="text/javascript" src="/js/style.js"> </script>
 
     </head>
 
@@ -31,10 +35,10 @@
                 </header>
 
                 <ul class="nav" style="margin-top: 85%;">
-                    <li> <a class="highlight" href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
-                    <li> <a class="highlight" href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
-                    <li> <a class="highlight" href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
-                    <li> <a class="highlight" href="#"> <i class="zmdi zmdi-settings"></i> Availability </a> </li>
+                    <li id="home"> <a th:onclick="'highlight()'"  href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
+                    <li> <a th:onclick="'highlight()'" id="best11" href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
+                    <li> <a th:onclick="'highlight()'" id="allPlayers" href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
+                    <li> <a th:onclick="'highlight()'" id="availability" href="#"> <i class="zmdi zmdi-settings"></i> Availability </a> </li>
                 </ul>
 
                 <ul class="nav">
