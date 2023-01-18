@@ -56,13 +56,13 @@ body {
     text-align: center;
 }
 
-#sidebar header a {
+#sidebar header p {
     color: #fff;
     display: block;
     text-decoration: none;
 }
 
-#sidebar header a:hover {
+#sidebar header p:hover {
     color: #fff;
 }
 

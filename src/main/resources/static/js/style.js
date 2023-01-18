@@ -7,7 +7,7 @@ function highlight(ElementId){
 
 
 
-    var el = document.querySelectorAll('a');
+    var el = document.querySelectorAll('#sidebar .nav li a');
 
     for (var i = 0; i < el.length; i++) {
         var currentEl = el[i];
