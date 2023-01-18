@@ -30,6 +30,10 @@
         <script type="text/javascript" src="/js/find_LoggedInName.js"> </script>
 
 
+        <!-- Custom js -->
+        <script type="text/javascript" src="/js/style.js"> </script>
+
+
     </head>
 
     <body th:onload="'currentUserName()'">
@@ -42,13 +46,13 @@
                 </header>
 
                 <ul class="nav" style="margin-top: 35%;">
-                    <li> <a href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
-                    <li> <a href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
-                    <li> <a href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
-                    <li> <a href="#"> <i class="zmdi zmdi-calendar"></i> Injured players </a> </li>
-                    <li> <a href="#"> <i class="zmdi zmdi-settings"></i> Applications </a> </li>
-                    <li> <a href="#"> <i class="zmdi zmdi-info-outline"></i> Match results </a> </li>
-                    <li> <a href="#"> <i class="zmdi zmdi-comment-more"></i> Team Code </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +home+ '\');'" id="home" href="#"> <i class="zmdi zmdi-view-dashboard"></i> Home </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +best11+ '\');'" id="best11" href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +allPlayers+ '\');'" id="allPlayers" href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +injuredPlayers+ '\');'" id="injuredPlayers" href="#"> <i class="zmdi zmdi-calendar"></i> Injured players </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +applications+ '\');'" id="applications" href="#"> <i class="zmdi zmdi-settings"></i> Applications </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +results+ '\');'" id="results" href="#"> <i class="zmdi zmdi-info-outline"></i> Match results </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +teamCode+ '\');'" id="teamCode" href="#"> <i class="zmdi zmdi-comment-more"></i> Team Code </a> </li>
 
                 </ul>
 
