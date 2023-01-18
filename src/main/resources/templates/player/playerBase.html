@@ -35,14 +35,14 @@
                 </header>
 
                 <ul class="nav" style="margin-top: 85%;">
-                    <li> <a th:onclick="'highlight(\'' +home+ '\');'" id="home" href="#"> <i class="zmdi zmdi-view-dashboard active"></i> Home </a> </li>
-                    <li> <a th:onclick="'highlight(\'' +best11+ '\');'" id="best11" href="#"> <i class="zmdi zmdi-link"></i> Best11 </a> </li>
-                    <li> <a th:onclick="'highlight(\'' +allPlayers+ '\');'" id="allPlayers" href="#"> <i class="zmdi zmdi-widgets"></i> All players </a> </li>
-                    <li> <a th:onclick="'highlight(\'' +availability+ '\');'" id="availability" href="#"> <i class="zmdi zmdi-settings"></i> Availability </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +home+ '\');'" id="home" href="#"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> Home </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +best11+ '\');'" id="best11" href="#"> <i class="zmdi zmdi-star"></i> Best11 </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +allPlayers+ '\');'" id="allPlayers" href="#"> <i class="zmdi zmdi-accounts"></i> All players </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +availability+ '\');'" id="availability" href="#"> <i class="zmdi zmdi-comment-text"></i> Availability </a> </li>
                 </ul>
 
                 <ul class="nav">
-                    <li> <a th:href="@{/logout}" id="logout"> <button class="btn btn-success"> Logout </button> </a> </li>
+                    <li> <a th:href="@{/logout}" id="logout"> <i class="zmdi zmdi-key"></i> <button class="btn btn-success"> Logout </button> </a> </li>
                 </ul>
 
             </div>
