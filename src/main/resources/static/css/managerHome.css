@@ -114,10 +114,6 @@ footer {
 }
 
 /* managerHome cards */
-.card-header{
-    background-color: #dce8f1;
-}
-
-.card-body{
-    background-color: #5fbae9;
+.card{
+    margin-top: 8%;
 }
