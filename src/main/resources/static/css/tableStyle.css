@@ -185,3 +185,14 @@ table.table .avatar {
     width: 30px;
     margin-left: 1px;
 }
+
+.injured{
+    height: 24px;
+    width: 26px;
+    margin-right: 12px;
+}
+
+.bowl{
+    height: 23px;
+    width: 23px;
+}
