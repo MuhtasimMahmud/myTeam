@@ -44,15 +44,11 @@ public class managerController {
         return "teamManagement/applications";
     }
 
-//    @GetMapping("/matchResults")
-//    public String results(){
-//        return "teamManagement/matchResults";
-//    }
-//
-//    @GetMapping("/teamCode")
-//    public String teamCode(){
-//        return "teamManagement/teamCode";
-//    }
+
+    @GetMapping("/teamCode")
+    public String teamCode(){
+        return "teamManagement/teamCode";
+    }
 
 
 }
