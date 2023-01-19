@@ -39,11 +39,11 @@ public class managerController {
         return "teamManagement/injuredPlayers";
     }
 
-//    @GetMapping("/applications")
-//    public String application(){
-//        return "teamManagement/applications";
-//    }
-//
+    @GetMapping("/applications")
+    public String application(){
+        return "teamManagement/applications";
+    }
+
 //    @GetMapping("/matchResults")
 //    public String results(){
 //        return "teamManagement/matchResults";
