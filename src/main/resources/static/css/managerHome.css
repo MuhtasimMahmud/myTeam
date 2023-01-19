@@ -112,3 +112,12 @@ footer {
     padding: 5px 10px;
     margin: 5px;
 }
+
+/* managerHome cards */
+.card-header{
+    background-color: #dce8f1;
+}
+
+.card-body{
+    background-color: #5fbae9;
+}
