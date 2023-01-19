@@ -18,17 +18,16 @@ public class managerController {
     UserRepository userRepository;
 
     @GetMapping("/managerHome")
-    public String adminUser(Model model, Principal principal){
-
-        User teamManagement = userRepository.findByEmail(principal.getName());
-
-        model.addAttribute("loggedInUserName", teamManagement.getName());
+    public String adminUser(){
         return "teamManagement/managerHome";
     }
 
+
     @GetMapping("/best11")
     public String best11(){
-        return "teamManagement/best";
+        return "teamManagement/best11";
     }
 
 }
+
+

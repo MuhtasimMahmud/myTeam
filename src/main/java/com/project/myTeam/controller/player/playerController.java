@@ -18,11 +18,7 @@ public class playerController {
     UserRepository userRepository;
 
     @GetMapping("/playerHome")
-    public String normalUser(Model model, Principal principal){
-
-        User player = userRepository.findByEmail(principal.getName());
-
-        model.addAttribute("loggedInUserName", player.getName());
+    public String normalUser(){
         return "player/playerHome";
     }
 

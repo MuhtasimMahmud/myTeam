@@ -2,7 +2,7 @@
 function currentUserName(){
 
     let httpRequest = new XMLHttpRequest();
-    httpRequest.open("GET", 'http://localhost:8080/currentLoggedInUserName');
+    httpRequest.open("GET", 'http://localhost:8080/currentLoggedInUserName'); //ei url ta userController e ase
     httpRequest.send();
 
     httpRequest.onload = function (){
