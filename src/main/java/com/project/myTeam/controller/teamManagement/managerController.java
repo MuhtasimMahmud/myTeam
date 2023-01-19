@@ -51,6 +51,12 @@ public class managerController {
     }
 
 
+    @GetMapping("/teamProfile")
+    public String teamProfile(){
+        return "teamManagement/teamProfile";
+    }
+
+
 }
 
 

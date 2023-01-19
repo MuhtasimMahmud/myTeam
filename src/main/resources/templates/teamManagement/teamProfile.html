@@ -1,13 +1,63 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <section>
 
-</body>
+            <form action="" method="post">
+
+
+                <div class="form-row">
+                    <!-- Name field-->
+                    <div class="form-group col-md-6">
+                        <label for="name_field">Your Name</label>
+                        <input name="name" type="text" class="form-control" id="name_field" placeholder="Enter your name">
+                    </div>
+
+                    <!-- email field-->
+                    <div class="form-group col-md-6">
+                        <label for="email_field">Your email</label>
+                        <input readonly name="email" type="email" class="form-control" id="email_field" placeholder="Enter your email">
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-row">
+
+                    <!-- officeName field-->
+                    <div class="form-group col-md-6">
+                        <label for="officeName_field">Office Name</label>
+                        <input name="officeName" type="text" class="form-control" id="officeName_field" placeholder="Microsoft">
+                    </div>
+
+                    <!-- position field-->
+                    <div class="form-group col-md-6">
+                        <label for="position_field">Your position</label>
+                        <input name="position" type="text" class="form-control" id="position_field" placeholder="Software Developer">
+                    </div>
+
+                </div>
+
+
+                <!--Submit and Reset field-->
+                <div class="container text-center">
+                    <button type="submit" class="btn btn-success mt-4">
+                        Update
+                    </button>
+                </div>
+
+
+            </form>
+
+
+        </section>
+    </body>
 </html>
