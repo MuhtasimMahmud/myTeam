@@ -21,12 +21,14 @@
 
 
 .table-title {
-    padding-bottom: 15px;
-    background: #299be4;
     color: #fff;
     padding: 16px 30px;
     margin: -20px -25px 10px;
     border-radius: 3px 3px 0 0;
+}
+
+.best11-table-title{
+    background: #299be4;
 }
 
 
