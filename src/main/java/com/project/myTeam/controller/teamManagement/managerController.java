@@ -26,4 +26,9 @@ public class managerController {
         return "teamManagement/managerHome";
     }
 
+    @GetMapping("/best11")
+    public String best11(){
+        return "teamManagement/best";
+    }
+
 }
