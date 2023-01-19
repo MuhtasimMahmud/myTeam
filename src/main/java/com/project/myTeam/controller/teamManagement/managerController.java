@@ -28,6 +28,33 @@ public class managerController {
         return "teamManagement/best11";
     }
 
+    @GetMapping("/allPlayers")
+    public String allPlayers(){
+        return "teamManagement/allPlayers";
+    }
+
+
+    @GetMapping("/injuredPlayers")
+    public String injuredPlayers(){
+        return "teamManagement/injuredPlayers";
+    }
+
+//    @GetMapping("/applications")
+//    public String application(){
+//        return "teamManagement/applications";
+//    }
+//
+//    @GetMapping("/matchResults")
+//    public String results(){
+//        return "teamManagement/matchResults";
+//    }
+//
+//    @GetMapping("/teamCode")
+//    public String teamCode(){
+//        return "teamManagement/teamCode";
+//    }
+
+
 }
 
 
