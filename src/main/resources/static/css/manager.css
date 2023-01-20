@@ -17,6 +17,17 @@ body{
 }
 
 
+/* team code css */
+.teamCode{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 250px;
+    margin-top: 300px;
+}
+
+
+
 /* team profile css */
 
 .profileDiv{
@@ -26,3 +37,4 @@ body{
     height: 60px;
     margin-top: 250px;
 }
+
