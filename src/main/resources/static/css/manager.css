@@ -19,3 +19,10 @@ body{
 
 /* team profile css */
 
+.profileDiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 60px;
+    margin-top: 250px;
+}
