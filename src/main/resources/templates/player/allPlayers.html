@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="player/playerBase::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> best11 </title>
+
+
+</head>
+
+<body>
+
+<section>
+
+    <div class="container-xl">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+
+                <div class="table-title allPlayers-table-title">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h2> <b> All Players </b> </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th> PID </th>
+                        <th> Name</th>
+                        <th> Age </th>
+                        <th> Role</th>
+                        <th> Status</th>
+                        <th> Action</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+
+                    <tr>
+                        <!-- PID -->
+                        <td>1</td>
+
+                        <!-- Player image -->
+                        <td><a href="#"><img src="/examples/images/avatar/1.jpg" class="avatar" > Michael Holz</a></td>
+
+                        <!-- Age -->
+                        <td>20</td>
+
+                        <!-- Player role -->
+                        <td> Batsman </td>
+
+                        <!-- Available or not -->
+                        <td><span class="status text-success">&bull;</span> Active</td>
+
+<!--                        <td><span class="status text-danger">&bull;</span> Suspended</td>  eta hocche injured player er jonno -->
+
+                        <!-- Select as injured or remove from best11 -->
+                        <td>
+                            <a href="#"> <img class="select" title="select for best11" src="/images/select.png">  </a>
+                            <a href="#"> <img class="actionImage" title="remove from team" src="/images/cross.png"> </a>
+                        </td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
