@@ -38,3 +38,13 @@ body{
     margin-top: 250px;
 }
 
+.teamProfileSubmit-btn-div{
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    width: 300px;
+}
+
+.teamProfileSubmit-btn{
+    margin-top: 40px;
+}
