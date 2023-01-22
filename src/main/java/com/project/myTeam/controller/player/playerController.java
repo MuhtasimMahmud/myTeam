@@ -22,4 +22,34 @@ public class playerController {
         return "player/playerHome";
     }
 
+
+    @GetMapping("/best11")
+    public String best11(){
+        return "player/best11";
+    }
+
+    @GetMapping("/allPlayers")
+    public String allPlayers(){
+        return "player/allPlayers";
+    }
+
+
+    @GetMapping("/applications")
+    public String application(){
+        return "teamManagement/applications";
+    }
+
+
+//    @GetMapping("/teamCode")
+//    public String teamCode(){
+//        return "teamManagement/teamCode";
+//    }
+
+
+    @GetMapping("/playerProfile")
+    public String teamProfile(){
+        return "player/playerProfile";
+    }
+
+
 }
