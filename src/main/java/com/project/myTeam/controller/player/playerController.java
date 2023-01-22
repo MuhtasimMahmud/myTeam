@@ -34,9 +34,9 @@ public class playerController {
     }
 
 
-    @GetMapping("/applications")
+    @GetMapping("/availability")
     public String application(){
-        return "teamManagement/applications";
+        return "player/availability";
     }
 
 
