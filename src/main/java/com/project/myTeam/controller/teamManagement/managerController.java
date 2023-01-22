@@ -59,6 +59,8 @@ public class managerController {
     @GetMapping("/tournamentDetail")
     public String tournamentDetail(){
         return "teamManagement/tournamentDetail";
+//        return "teamManagement/noDetailsYet";
+
     }
 }
 
