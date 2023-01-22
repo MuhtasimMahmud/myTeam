@@ -45,5 +45,12 @@ public class playerController {
         return "player/playerProfile";
     }
 
+    @GetMapping("/tournamentDetail")
+    public String tournamentDetail(){
+        return "player/tournamentDetail";
+//        return "player/noDetailsYet";
+
+    }
+
 
 }

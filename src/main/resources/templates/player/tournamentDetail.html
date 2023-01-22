@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="teamManagement/managerBase::layout(~{::section})">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <section id="tournamentDetail">
+
+
+            <div class="text-center">
+                <img th:src="@{/images/tournamentCup.jpg}" class="img-fluid" alt="Responsive image">
+            </div>
+
+            <h3 class="text-center title"> League11 2023 </h3>
+
+            <div class="tournamentAnnouncement">
+                <p>
+                    The wait is over! It's time to gear up and get ready for the ultimate cricket tournament. In this season we are planning to start our tournament
+                    from 20th March and the final match will be held in 30th April. We really hope that your team wil participate in the upcoming season and will have
+                    a fantastic tournament. If your team is ready to participate then click the button bellow. Best of luck! <br><br>
+
+
+                    We are proud to announce that the winner of our upcoming cricket tournament will take home a cash prize of 10cr tk.
+                    This is a great opportunity for teams to showcase their skills and compete against the other best teams.
+                    So, don't miss your chance to be a part of this incredible event! Get your tickets now and
+                    let's hear the sound of bat and ball as we battle it out on the field. May the best team win!
+                </p>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-success"> Participate </button>
+            </div>
+
+        </section>
+
+    </body>
+</html>
