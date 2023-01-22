@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title> Player base </title>
+        <title> Player </title>
 
 
         <!-- side navbar er template er css -->
@@ -44,10 +44,10 @@
                 </header>
 
                 <ul class="nav" style="margin-top: 85%;">
-                    <li> <a th:onclick="'highlight(\'' +home+ '\');'" id="home" th:href="@{player/playerHome}"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> Home </a> </li>
-                    <li> <a th:onclick="'highlight(\'' +best11+ '\');'" id="best11" th:href="@{player/best11}"> <i class="zmdi zmdi-star"></i> Best11 </a> </li>
-                    <li> <a th:onclick="'highlight(\'' +allPlayers+ '\');'" id="allPlayers" th:href="@{player/allPlayers}"> <i class="zmdi zmdi-accounts"></i> All players </a> </li>
-                    <li> <a th:onclick="'highlight(\'' +availability+ '\');'" id="availability" th:href="@{player/availability}"> <i class="zmdi zmdi-comment-text"></i> Availability </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +home+ '\');'" id="home" th:href="@{/player/playerHome}"> <i class="zmdi zmdi-home zmdi-hc-fw"></i> Home </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +best11+ '\');'" id="best11" th:href="@{/player/best11}"> <i class="zmdi zmdi-star"></i> Best11 </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +allPlayers+ '\');'" id="allPlayers" th:href="@{/player/allPlayers}"> <i class="zmdi zmdi-accounts"></i> All players </a> </li>
+                    <li> <a th:onclick="'highlight(\'' +availability+ '\');'" id="availability" th:href="@{/player/availability}"> <i class="zmdi zmdi-comment-text"></i> Availability </a> </li>
                 </ul>
 
                 <ul class="nav">

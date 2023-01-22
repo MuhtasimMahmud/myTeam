@@ -4,7 +4,6 @@ import com.project.myTeam.models.User;
 import com.project.myTeam.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -18,7 +17,7 @@ public class playerController {
     UserRepository userRepository;
 
     @GetMapping("/playerHome")
-    public String normalUser(){
+    public String playerUser(){
         return "player/playerHome";
     }
 
@@ -39,11 +38,6 @@ public class playerController {
         return "player/availability";
     }
 
-
-//    @GetMapping("/teamCode")
-//    public String teamCode(){
-//        return "teamManagement/teamCode";
-//    }
 
 
     @GetMapping("/playerProfile")
