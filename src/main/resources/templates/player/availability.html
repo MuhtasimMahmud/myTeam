@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="player/playerBase::layout(~{::section})">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+    <section>
+        <!--experience field-->
+        <div class="form-group col-md-12">
+            <label for="application_field"> Write your application </label>
+            <textarea name="application" id="application_field" readonly placeholder="Write your application." rows="7" class="form-control"> </textarea>
+            <button class="btn btn-success" style="margin-top: 12px;"> Send </button>
+        </div>
+
+
+    </section>
+
+    </body>
+</html>
