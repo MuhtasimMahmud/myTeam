@@ -45,9 +45,9 @@ public class managerController {
     }
 
 
-    @GetMapping("/teamCode")
+    @GetMapping("/searchPlayer")
     public String teamCode(){
-        return "teamManagement/teamCode";
+        return "teamManagement/searchPlayer";
     }
 
 
