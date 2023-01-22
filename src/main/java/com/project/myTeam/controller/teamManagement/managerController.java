@@ -56,7 +56,10 @@ public class managerController {
         return "teamManagement/teamProfile";
     }
 
-
+    @GetMapping("/tournamentDetail")
+    public String tournamentDetail(){
+        return "teamManagement/tournamentDetail";
+    }
 }
 
 
