@@ -119,9 +119,13 @@ footer {
 }
 
 .UploadResultDiv{
-
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 800px;
+    margin-top: 80px;
 }
 
 .UploadResult{
-
+    margin-left: 140px;
 }
