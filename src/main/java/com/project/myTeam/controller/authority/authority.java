@@ -19,4 +19,10 @@ public class authority {
     public String players(){
         return "authority/playersName";
     }
+
+    @GetMapping("/teamsName")
+    public String teams(){
+        return "authority/teamsName";
+    }
+
 }
