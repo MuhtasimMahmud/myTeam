@@ -15,7 +15,7 @@ public class authority {
     }
 
 
-    @GetMapping("/playersNames")
+    @GetMapping("/playersName")
     public String players(){
         return "authority/playersName";
     }
