@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/authority")
 public class authority {
 
-    @GetMapping("/league11Authority")
+    @GetMapping("/authorityHome")
     public String league11(){
-        return "authority/authorityBase";
+        return "authority/authorityHome";
     }
 }
