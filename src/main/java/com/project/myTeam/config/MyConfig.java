@@ -53,6 +53,7 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeHttpRequests().antMatchers("/player/**").hasRole("PLAYER")
                 .antMatchers("/teamManagement/**").hasRole("MANAGER")
+                .antMatchers("/authority/**").hasRole("AUTHORITY")
                 .and().formLogin()
                 .loginPage("/signin")
                 .loginProcessingUrl("/dologin")
