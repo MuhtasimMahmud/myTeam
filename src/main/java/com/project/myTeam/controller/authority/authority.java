@@ -11,6 +11,6 @@ public class authority {
 
     @GetMapping("/league11Authority")
     public String league11(){
-        return "Authority/authorityBase";
+        return "authority/authorityBase";
     }
 }
