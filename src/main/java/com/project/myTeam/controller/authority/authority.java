@@ -13,4 +13,10 @@ public class authority {
     public String league11(){
         return "authority/authorityHome";
     }
+
+
+    @GetMapping("/playersNames")
+    public String players(){
+        return "authority/playersName";
+    }
 }
